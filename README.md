@@ -42,9 +42,9 @@ void insertionSort(int arr[], int n) {
         }
         arr[j + 1] = key; // Insert the key at the correct position
     }
-}
 
-// Function to print the array
+ 
+Q.Function to print the array
 void printArray(int arr[], int n) {
     for (int i = 0; i < n; i++) {
         printf("%d ", arr[i]);
@@ -64,5 +64,62 @@ int main() {
     printf("Sorted array: \n");
     printArray(arr, n);
 
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Q.sum of array element 
+#include <stdio.h>
+int main() {
+    int n, sum = 0;
+    printf("Enter number of elements: "); 
+    scanf("%d", &n);
+    int arr[n];
+    printf("Enter elements: ");
+    for (int i = 0; i < n; i++) { 
+        scanf("%d", &arr[i]); 
+        sum += arr[i]; 
+    }
+    printf("Sum: %d\n", sum);
+    return 0;
+}
+
+
+
+
+
+
+
+Q.largest number in array 
+#include <stdio.h>
+int main() {
+    int n, max;
+    printf("Enter number of elements: "); 
+    scanf("%d", &n);
+    int arr[n];
+    printf("Enter elements: ");
+    for (int i = 0; i < n; i++) { 
+        scanf("%d", &arr[i]); 
+    }
+    max = arr[0];
+    for (int i = 1; i < n; i++) { 
+        if (arr[i] > max) max = arr[i]; 
+    }
+    printf("Largest: %d\n", max);
     return 0;
 }
